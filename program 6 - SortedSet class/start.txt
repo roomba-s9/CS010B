@@ -1,0 +1,1 @@
+g++ IntList.cpp main.cpp SortedSet.cpp -Wall -Werror -Wuninitialized -o a.out
