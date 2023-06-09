@@ -1,0 +1,70 @@
+g++ main.cpp Warrior.cpp Character.cpp Wizard.cpp Elf.cpp -Wall -Werror -Wuninitialized -o a.out
+
+Types of Characters: Elf, Warrior, Wizard
+
+Characters
+constructor -- hero type, name, health, attack strength
+
+variables:
+    #type
+    #name
+    #health
+    #attackStrength
+functions:
+    +getType()
+    +getName()
+    +getHealth()
+    +damage()
+    +isAlive()
+    +attack()
+
+Elf
+constructor -- name, health, attack strength, family name
+
+variables:
+    #type
+    #name
+    #health
+    #attackStrength
+    -familyName -> specific to Elf
+functions:
+    +getType()
+    +getName()
+    +getHealth()
+    +damage()
+    +isAlive()
+    +attack() -> override
+
+Warrior
+constructor -- name, health, attack strength, allegiance
+
+variables:
+    #type
+    #name
+    #health
+    #attackStrength
+    -allegiance -> specific to Warrior
+functions:
+    +getType()
+    +getName()
+    +getHealth()
+    +damage()
+    +isAlive()
+    +attack() -> override
+
+Wizard
+constructor -- name, health, attack strength, rank
+
+variables:
+    #type
+    #name
+    #health
+    #attackStrength
+    -rank -> specific to Wizard
+functions:
+    +getType()
+    +getName()
+    +getHealth()
+    +damage()
+    +isAlive()
+    +attack() -> override
